@@ -1,0 +1,57 @@
+/**app.wxss**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title_item {
+  text-align: center;
+}
+
+.body_item {
+  margin: 10rpx;
+  background-color: #f0f8ff;
+}
+
+.add_item {
+  height: 70rpx;
+}
+
+input {
+  border: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 31px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+text {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btnsave {
+  background-color: #63b8ff;
+  margin-top: 20rpx;
+}
+
+.subjectname_item {
+  margin-bottom: 5px;
+}
+
+.anser_item{
+  color: #404040;
+}
+
+/* .check_item{
+  width: 5px;
+  height: 5px;
+} */

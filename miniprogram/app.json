@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/jkindex/jkindex",
+    "pages/jkhb/jkhb",
+    "pages/jkhb/addjkhb",
+    "pages/jkme/jkme",
+    "pages/jkdoler/jkdoler",
+    "pages/jkdoler/addjkdoler"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#B9D3EE",
+    "navigationBarTitleText": "福贝珍健康100",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "color": "#333",
+    "borderStyle":"white",
+    "backgroundColor":"#B9D3EE",
+    "list": [
+      {
+        "pagePath": "pages/jkindex/jkindex",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/jkdoler/jkdoler",
+        "text": "健康100"
+      },
+      {
+        "pagePath": "pages/jkhb/jkhb",
+        "text": "领🧧"
+      },
+      {
+        "pagePath": "pages/jkme/jkme",
+        "text": "我的"
+      }
+    ]
+  }
+}
