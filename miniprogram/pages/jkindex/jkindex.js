@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    //判断小程序的API，回调，参数，组件等是否在当前版本可用。
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
   /**
@@ -14,7 +15,22 @@ Page({
    */
   onLoad: function(options) {
     // console.log('首页加载options：', options);
-
+    // 获取用户信息
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+          wx.getUserInfo({
+            success: res => {
+              this.setData({
+                avatarUrl: res.userInfo.avatarUrl,
+                userInfo: res.userInfo
+              })
+            }
+          })
+        }
+      }
+    })
   },
 
   /**

@@ -11,15 +11,15 @@ Page({
   //js
   //通过判断改变状态时value值是否为空来来判断是否被选中  
   ischeckbox: function (e) {
-    if (e.detail.value == '') {
+    /*if (e.detail.value == '') {
       check = 0
     }
     else {
       check = 1
     }
 
-    console.log(e.detail.value);
-    console.log(check);
+    console.log(e.detail.value);*/
+    console.log(e);
   },
 
   /**

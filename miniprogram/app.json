@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/jkindex/jkindex",
     "pages/jkhb/jkhb",
     "pages/jkhb/addjkhb",
     "pages/jkme/jkme",
     "pages/jkdoler/jkdoler",
-    "pages/jkdoler/addjkdoler"
-    
+    "pages/jkdoler/addjkdoler",
+    "pages/jkaddobj/jkaddobj",
+    "pages/jkindex/jkindex"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -17,26 +17,34 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor": "red",
+    "selectedColor": "#FF0000",
     "color": "#333",
     "borderStyle":"white",
     "backgroundColor":"#B9D3EE",
     "list": [
       {
         "pagePath": "pages/jkindex/jkindex",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye.png"
       },
       {
         "pagePath": "pages/jkdoler/jkdoler",
-        "text": "健康100"
+        "text": "健康100",
+        "iconPath": "images/jk100.png",
+        "selectedIconPath": "images/jk100.png"
       },
       {
         "pagePath": "pages/jkhb/jkhb",
-        "text": "领🧧"
+        "text": "领",
+        "iconPath": "images/hongbao.png",
+        "selectedIconPath": "images/hongbao.png"
       },
       {
         "pagePath": "pages/jkme/jkme",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my.png"
       }
     ]
   }

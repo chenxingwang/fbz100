@@ -109,20 +109,43 @@ Page({
    */
   savejkdoler: function() {
     // console.log('data', this.data);
-    var data = {};
+    let subjectname = this.data.subjectname;
+    let subjectanserA = this.data.subjectanserA;
+    let subjectanserB = this.data.subjectanserB;
+    let subjectanserC = this.data.subjectanserC;
+    let subjectanserD = this.data.subjectanserD;
+    let subjectanser = this.data.subjectanser;
+
+    let data = {};
     if (this.data.type == 'no') {
+      if (subjectname == '' || subjectname == undefined) {
+        this.checkTode('请输入题目');
+        return;
+      }
+      if (subjectanser == '' || subjectanser == undefined) {
+        this.checkTode('请输入描述');
+        return;
+      }
       data = {
-        subjectname: this.data.subjectname,
-        subjectanser: this.data.subjectanser,
+        subjectname: subjectname,
+        subjectanser: subjectanser,
         type: this.data.type
       }
     } else {
+      if (subjectname == '' || subjectname == undefined) {
+        this.checkTode('请输入题目');
+        return;
+      }
+      if (subjectanserA == '' || subjectanserA == undefined || subjectanserB == '' || subjectanserB == undefined) {
+        this.checkTode('请输入答案');
+        return;
+      }
       data = {
-        subjectname: this.data.subjectname,
-        subjectanserA: this.data.subjectanserA,
-        subjectanserB: this.data.subjectanserB,
-        subjectanserC: this.data.subjectanserC,
-        subjectanserD: this.data.subjectanserD,
+        subjectname: subjectname,
+        subjectanserA: subjectanserA,
+        subjectanserB: subjectanserB,
+        subjectanserC: subjectanserC,
+        subjectanserD: subjectanserD,
         type: this.data.type
       }
     }
@@ -154,5 +177,12 @@ Page({
         console.error('[数据库] [新增记录] 失败：', err)
       }
     })
+  },
+
+  checkTode(title){
+    wx.showToast({
+      icon: 'none',
+      title: title
+    });
   }
 })

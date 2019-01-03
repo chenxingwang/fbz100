@@ -67,16 +67,16 @@
       <view class='anser_item' wx:if="{{item.type=='judge'}}">
         <radio-group name='subjectanser{{item._id}}'>
           <view wx:if="{{item.subjectanserA!=''}}">
-            <label><radio class='check_item'></radio>A:{{item.subjectanserA}}</label>
+            <label><radio class='check_item' value='{{item.subjectanserA}}'></radio>A:{{item.subjectanserA}}</label>
           </view>
           <view wx:if="{{item.subjectanserB!=''}}">
-            <label><radio class='check_item'></radio>B:{{item.subjectanserB}}</label>
+            <label><radio class='check_item' value='{{item.subjectanserB}}'></radio>B:{{item.subjectanserB}}</label>
           </view>
           <view wx:if="{{item.subjectanserC!=''}}">
-            <label><radio class='check_item'></radio>C:{{item.subjectanserC}}</label>
+            <label><radio class='check_item' value='{{item.subjectanserC}}'></radio>C:{{item.subjectanserC}}</label>
           </view>
           <view wx:if="{{item.subjectanserD!=''}}">
-            <label><radio class='check_item'></radio>D:{{item.subjectanserD}}</label>
+            <label><radio class='check_item' value='{{item.subjectanserD}}'></radio>D:{{item.subjectanserD}}</label>
           </view>
         </radio-group>
       </view>

@@ -17,7 +17,7 @@
 }
 
 .add_item {
-  height: 70rpx;
+  margin-top: 20rpx;
 }
 
 input {
@@ -39,8 +39,9 @@ text {
 }
 
 .btnsave {
-  background-color: #63b8ff;
+  background-color: rgb(80, 150, 231);
   margin-top: 20rpx;
+  width: 40%;
 }
 
 .subjectname_item {
@@ -49,6 +50,13 @@ text {
 
 .anser_item{
   color: #404040;
+  margin-left: 15px;
+}
+
+.add_btn{
+  background-color: #B9D3EE;
+  font-size: 1rem;
+  width: 80%;
 }
 
 /* .check_item{
