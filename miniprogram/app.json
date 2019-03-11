@@ -1,16 +1,16 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/jkhb/jkhb",
+    "pages/login/login",
     "pages/jkhb/addjkhb",
     "pages/jkme/jkme",
     "pages/jkdoler/jkdoler",
     "pages/jkdoler/addjkdoler",
     "pages/jkaddobj/jkaddobj",
-    "pages/jkindex/jkindex"
+    "pages/jkindex/jkindex",
+    "pages/addst/index"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#B9D3EE",
     "navigationBarTitleText": "福贝珍健康100",
@@ -23,29 +23,18 @@
     "backgroundColor":"#B9D3EE",
     "list": [
       {
+        "pagePath": "pages/jkhb/jkhb",
+        "text": "健康塑形",
+        "iconPath": "images/02.jpg",
+        "selectedIconPath": "images/02.jpg"
+      },
+      {
         "pagePath": "pages/jkindex/jkindex",
         "text": "首页",
         "iconPath": "images/shouye.png",
         "selectedIconPath": "images/shouye.png"
-      },
-      {
-        "pagePath": "pages/jkdoler/jkdoler",
-        "text": "健康100",
-        "iconPath": "images/jk100.png",
-        "selectedIconPath": "images/jk100.png"
-      },
-      {
-        "pagePath": "pages/jkhb/jkhb",
-        "text": "领",
-        "iconPath": "images/hongbao.png",
-        "selectedIconPath": "images/hongbao.png"
-      },
-      {
-        "pagePath": "pages/jkme/jkme",
-        "text": "我的",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my.png"
       }
+      
     ]
   }
 }

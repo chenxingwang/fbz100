@@ -1,0 +1,25 @@
+<view class='table'>
+<button class='title_btn'>个人资料</button>
+<view class='tr'>
+<view class='td h'>
+<text>体重</text>
+</view>
+<view class='td l'>
+<input class='input_item' type='digit' bindinput='bindUserTiz' placeholder='请输入体重'></input>
+</view>
+</view>
+
+<view class='tr'>
+<view class='td h'>
+<text>身高</text>
+</view>
+<view class='td l'>
+<input class='input_item' type='digit' bindinput='bindUserSg' placeholder='请输入身高'></input>
+</view>
+</view>
+
+<view>
+<button class='next_btn' bindtap='nextFunction'>下一步</button>
+</view>
+
+</view>

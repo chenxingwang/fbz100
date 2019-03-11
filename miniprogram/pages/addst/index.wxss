@@ -1,0 +1,5 @@
+/* pages/addst/index.wxss */
+
+page {
+  background-color: #f0ee97;
+}
