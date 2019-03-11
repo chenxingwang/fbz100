@@ -94,7 +94,7 @@ text {
 }
 
 .td, .l {
-  text-align: leßft;
+  text-align: left;
 }
 
 .next_btn {
@@ -109,4 +109,9 @@ text {
   border-radius: 25px;
   color: white;
   font-weight: bold;
+}
+
+.input_item {
+  width: 100%;
+  border-radius: 15px;
 }

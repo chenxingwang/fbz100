@@ -121,7 +121,8 @@ bindUserPhone: function(e){
     //     usertiz:'',
     //     usersg:'',
     //     useryw:'',
-    //     biaozhuntz:
+    //     biaozhuntz:'',//体质指数（BMI）=体重（kg）÷身高^2（m）
+    //     qiwtx:'',//期望体型
     //   },
     //   success: res => {
         // 在返回结果中会包含新创建的记录的 _id
@@ -129,7 +130,7 @@ bindUserPhone: function(e){
         //   title: '新增记录成功',
         // })
         wx.navigateTo({
-          url: '../addst/index?userphone=' + this.data.userphone,//跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径
+          url: '../addst/index?userkey=' + res._id,//跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径
         });
     //     console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
     //   },

@@ -7,7 +7,7 @@ Page({
   data: {
     usertiz:'',
     usersg:'',
-    userphone:''
+    userkey:''
   },
 
   /**
@@ -33,7 +33,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      userphone: options.userphone
+      userkey: options.userkey
     });
   },
 
@@ -107,17 +107,19 @@ Page({
     //   })
     //   return;
     // }
+    // const usertiz = this.data.usertiz;//体重
+    // const usersg = this.data.usersg;//身高
+    // const biaozhuntz = (usertiz/(usersg*usersg)).toFixed(2);
 
     // const db = wx.cloud.database()
-    // const newCount = this.data.count + 1
-    // db.collection('counters').doc(this.data.counterId).update({
+    // db.collection('counters').doc(this.data.userkey).update({
     //   data: {
-    //     count: newCount
+    //     usertiz: usertiz,
+    //     usersg: usersg,
+    //     biaozhuntz: biaozhuntz,
     //   },
     //   success: res => {
-    //     this.setData({
-    //       count: newCount
-    //     })
+    //     
     //   },
     //   fail: err => {
     //     icon: 'none',
