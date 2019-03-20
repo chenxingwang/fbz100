@@ -1,0 +1,6 @@
+/* pages/tzbz/index.wxss */
+
+.view_text{
+  margin: 20px;
+  font-size: 22px;
+}

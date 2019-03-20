@@ -2,13 +2,14 @@
   "pages": [
     "pages/jkhb/jkhb",
     "pages/login/login",
-    "pages/jkhb/addjkhb",
+    "pages/addjkhb/addjkhb",
     "pages/jkme/jkme",
     "pages/jkdoler/jkdoler",
     "pages/jkdoler/addjkdoler",
     "pages/jkaddobj/jkaddobj",
     "pages/jkindex/jkindex",
-    "pages/addst/index"
+    "pages/addst/index",
+    "pages/tzbz/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

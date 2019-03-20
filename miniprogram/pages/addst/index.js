@@ -126,6 +126,10 @@ Page({
     //     console.error('[数据库] [更新记录] 失败：', err)
     //   }
     // })
+
+    wx.navigateTo({
+      url: '../tzbz/index?userkey=' + 1
+    });
   }
 
 })

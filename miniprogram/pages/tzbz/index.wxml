@@ -1,0 +1,12 @@
+<!--pages/tzbz/index.wxml-->
+<view>
+<image src='/images/91553093674.png' style='width:100%;'/>
+<image src='/images/111553094190.png' style='width:10px;height:50px;margin-top:-15px;margin-left:50%;'></image>
+ <view class='view_text' style='color:red;'> <text class='jkzs' >您的体重指数为{{tzzs}}，平时注意控制饮食适量运动哦！</text></view>
+
+ <view class='view_text'><text class='jkzs' >计算公式：体重指数=体重÷(身高x身高)</text></view>
+
+ <view class='view_text'>
+<button class='next_btn' bindtap='nextFunction'>下一步</button>
+</view>
+</view>

@@ -130,7 +130,7 @@ bindUserPhone: function(e){
         //   title: '新增记录成功',
         // })
         wx.navigateTo({
-          url: '../addst/index?userkey=' + res._id,//跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径
+          url: '../addst/index?userkey=' + 1//res._id,//跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径
         });
     //     console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
     //   },
