@@ -9,52 +9,52 @@ Page({
       {
         name: '',
         url: '/pages/Course/course',
-        icon: '../../../../images/n01.jpg',
+        icon: '/images/n01.jpg',
         code: 'n01'
       },
       {
         name: '',
         url: '/pages/Course/course',
-        icon: '../../../../images/n02.jpg',
+        icon: '/images/n02.jpg',
         code: 'n02'
       },
       {
         name: '',
         url: '/pages/Course/course',
-        icon: '../../../../images/n03.jpg',
+        icon: '/images/n03.jpg',
         code: 'n03'
       },
       {
         name: '',
-        icon: '../../../../images/n04.jpg',
+        icon: '/images/n04.jpg',
         code: 'n04'
       },
       {
         name: '',
         url: '/pages/Course/course',
-        icon: '../../../../images/n05.jpg',
+        icon: '/images/n05.jpg',
         code: 'n05'
       },
       {
         name: '',
-        icon: '../../../../images/n06.jpg',
+        icon: '/images/n06.jpg',
         code: 'n06'
       },
       {
         name: '',
         url: '/pages/Course/course',
-        icon: '../../../../images/n07.jpg',
+        icon: '/images/n07.jpg',
         code: 'n07'
       },
       {
         name: '',
-        icon: '../../../../images/n08.jpg',
+        icon: '/images/n08.jpg',
         code: 'n08'
       },
       {
         name: '',
         url: '/pages/Course/course',
-        icon: '../../../../images/n09.jpg',
+        icon: '/images/n09.jpg',
         code: 'n09'
       }
     ]

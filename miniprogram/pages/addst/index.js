@@ -118,9 +118,9 @@ Page({
       })
       return;
     }
-    if (this.data.usersg > 4) {
+    if (this.data.usersg > 400) {
       wx.showToast({
-        title: '身高不超过4米',
+        title: '身高不超过400',
         icon: 'loading',
         duration: 1000
       })
@@ -128,7 +128,9 @@ Page({
     }
     let usertiz = this.data.usertiz;//体重
     let usersg = this.data.usersg;//身高
-    let biaozhuntz = (usertiz/(usersg*usersg)).toFixed(2);
+    //身高换算为为米
+    let resourcesg = (usersg / 100).toFixed(2);
+    let biaozhuntz = (usertiz / (resourcesg * resourcesg)).toFixed(2);
 
     this.setData({
       biaozhuntz: biaozhuntz

@@ -70,7 +70,7 @@
   color: white;
   background-color: rgb(194, 191, 191);
   width: 100%;
-  height: 99%
+  height: 40px;
 }
 .btn::after{
  border: none;
@@ -80,7 +80,7 @@
   color: white;
   background-color: rgb(174, 216, 102);
   width: 100%;
-  height: 99%;
+  height: 40px;
 }
 .btn1::after{
  border: none;
@@ -90,7 +90,7 @@
   color: white;
   background-color: rgb(240, 132, 55);
   width: 100%;
-  height: 99%
+  height: 40px;
 }
 .btn2::after{
  border: none;
@@ -100,7 +100,7 @@
   color: white;
   background-color: rgb(214, 39, 39);
   width: 100%;
-  height: 99%
+  height: 40px;
 }
 .btn3::after{
  border: none;

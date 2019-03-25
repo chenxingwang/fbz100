@@ -33,12 +33,11 @@ Page({
         
         
         if (this.data.usersex == '男') {
-          ywbz = ((usg * 100) / 2) - 11;
+          ywbz = (usg / 2) - 11;
           let startyw = ywbz - 5;
           let endyw = ywbz + 5;
           this.setData({
             texttz: '根据您提供的身高，您的健康腰围是：' + startyw + 'cm到' + endyw + 'cm',
-            usersg: res.data.usersg * 100,
             shijiyw: '您的实际腰围：' + this.data.useryw + 'cm'
           });
           if (this.data.useryw > startyw && this.data.useryw < endyw)
@@ -54,12 +53,11 @@ Page({
               ywjy: '您有一个水桶腰，要加强锻炼哦！'
             });
         } else if (this.data.usersex == '女') {
-          ywbz = ((usg * 100) / 2) - 14;
+          ywbz = (usg / 2) - 14;
           let startyw = ywbz - 5;
           let endyw = ywbz + 5;
           this.setData({
             texttz: '根据您提供的身高，您的健康腰围是：' + startyw + 'cm到' + endyw + 'cm',
-            usersg: res.data.usersg * 100,
             shijiyw: '您的实际腰围：' + this.data.useryw + 'cm'
           });
           if (this.data.useryw > startyw && this.data.useryw < endyw)

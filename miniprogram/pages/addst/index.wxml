@@ -14,7 +14,7 @@
 <text>身高</text>
 </view>
 <view class='td l'>
-<input class='input_item' type='digit' bindinput='bindUserSg' placeholder='请输入身高(米)'></input>
+<input class='input_item' type='digit' bindinput='bindUserSg' placeholder='请输入身高(cm)'></input>
 </view>
 </view>
 
