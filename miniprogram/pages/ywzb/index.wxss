@@ -1,0 +1,33 @@
+/* pages/ywzb/index.wxss */
+
+#manbzyw {
+  text-align: left;
+  width: 100%;
+  color: rgb(16, 82, 44);
+  margin: 20px;
+}
+
+#sexbzyw {
+  text-align: left;
+  width: 100%;
+  color: rgb(41, 172, 95);
+  margin: 20px;
+}
+
+.topup {
+  margin: 20px;
+}
+
+.view_text {
+  text-align: left;
+  margin: 20px;
+}
+
+.next_view {
+  margin-top: 10px;
+}
+
+.remark {
+  text-align: left;
+  color: rgba(152, 153, 153, 1);
+}

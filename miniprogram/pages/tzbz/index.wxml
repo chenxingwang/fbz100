@@ -1,10 +1,25 @@
 <!--pages/tzbz/index.wxml-->
 <view>
-<image src='/images/91553093674.png' style='width:100%;'/>
-<image src='/images/111553094190.png' style='width:10px;height:50px;margin-top:-15px;margin-left:50%;'></image>
- <view class='view_text' style='color:red;'> <text class='jkzs' >您的体重指数为{{tzzs}}，平时注意控制饮食适量运动哦！</text></view>
+<view class="topup"><button class='title_btn'>体重指数</button></view>
+<view id='lang-text'>
+<view id='sbdw'>18.5</view>
+<view id='esdl'>24.0</view>
+<view id='ebdl'>28.0</view>
+</view>
+<view id='lang-text'>
+<view id='triangle-up'></view>
+<view id='triangle-ce'><button class='btn'>偏轻</button></view>
+<view id='triangle-zc'><button class='btn1'>正常</button></view>
+<view id='triangle-cz'><button class='btn2'>超重</button></view>
+<view id='triangle-fp'><button class='btn3'>肥胖</button></view>
+<view id='triangle-fpup'></view>
+</view>
+<!-- <image src='/images/91553093674.png' style='width:100%;'/> -->
+<image src='/images/111553094190.png' style='width:{{imgwidth}};height:50px;margin-left:{{bfb}};'></image>
+<!-- <text style='color:red:width:0;height:50px;margin-left:{{bfb}};'>↑</text> -->
+ <view class='view_text' style='color:red;'> <text class='jkzs' >{{texttz}}</text></view>
 
- <view class='view_text'><text class='jkzs' >计算公式：体重指数=体重÷(身高x身高)</text></view>
+ <view class='view_text'><text class='jkzsbz' >体质指数(BMI)=体重(kg)÷身高^2(m)</text></view>
 
  <view class='view_text'>
 <button class='next_btn' bindtap='nextFunction'>下一步</button>

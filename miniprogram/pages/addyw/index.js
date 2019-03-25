@@ -1,31 +1,16 @@
-// pages/addst/index.js
+// pages/addyw/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    usertiz:'',
-    usersg:'',
-    usersex:'',
-    biaozhuntz:''
+    useryw:''
   },
 
-  /**
-   * 获取输入的体重
-   */
-  bindUserTiz: function(e){
+  bindUserYw: function(e){
     this.setData({
-      usertiz: e.detail.value
-    });
-  },
-
-  /**
-   * 获取输入的身高
-   */
-  bindUserSg: function(e) {
-    this.setData({
-      usersg: e.detail.value
+      useryw: e.detail.value
     });
   },
 
@@ -33,7 +18,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
     this.setData({
       usersex: options.usersex
     });
@@ -89,62 +73,33 @@ Page({
 
   },
 
+  nextFunction: function(){
+    if (this.data.useryw.length == 0) {
+      wx.showToast({
+        title: '腰围不能为空',
+        icon: 'loading',
+        duration: 1000
+      })
+      return;
+    }
+    if (this.data.useryw.length >= 4) {
+      wx.showToast({
+        title: '腰围不能过大',
+        icon: 'loading',
+        duration: 1000
+      })
+      return;
+    }
 
-  /**
-   * 
-   */
-  nextFunction: function() {
-    if(this.data.usertiz.length==0){
-      wx.showToast({
-        title: '体重不能为空',
-        icon: 'loading',
-        duration: 1000
-      })
-      return;
-    }
-    if (this.data.usertiz > 1000) {
-      wx.showToast({
-        title: '体重不超过1000',
-        icon: 'loading',
-        duration: 1000
-      })
-      return;
-    }
-    if (this.data.usersg.length == 0) {
-      wx.showToast({
-        title: '身高不能为空',
-        icon: 'loading',
-        duration: 1000
-      })
-      return;
-    }
-    if (this.data.usersg > 4) {
-      wx.showToast({
-        title: '身高不超过4米',
-        icon: 'loading',
-        duration: 1000
-      })
-      return;
-    }
-    let usertiz = this.data.usertiz;//体重
-    let usersg = this.data.usersg;//身高
-    let biaozhuntz = (usertiz/(usersg*usersg)).toFixed(2);
-
-    this.setData({
-      biaozhuntz: biaozhuntz
-    });
-    // console.log("addst data:",this.data)
     const db = wx.cloud.database()
     db.collection('customer').doc(this.data.openid).update({
       data: {
-        usertiz: usertiz,
-        usersg: usersg,
-        biaozhuntz: biaozhuntz,
+        useryw: this.data.useryw
       },
       success: res => {
         // console.log('【数据库】【更新记录】成功：', res);
         wx.navigateTo({
-          url: '../tzbz/index?biaozhuntz=' + this.data.biaozhuntz + '&usersex=' + this.data.usersex
+          url: '../ywzb/index?usersex=' + this.data.usersex + "&useryw=" + this.data.useryw
         });
       },
       fail: err => {
@@ -153,9 +108,10 @@ Page({
           icon: 'loading',
           duration: 1000
         });
-        // console.error('[数据库] [更新记录] 失败：', err)
+          // console.error('[数据库] [更新记录] 失败：', err)
       }
-    })
+    });
+
   }
 
 })

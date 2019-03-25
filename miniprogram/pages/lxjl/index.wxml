@@ -1,0 +1,4 @@
+<view>
+  <text style="">扫码联系教练教你如何健身</text>
+  <image src='/images/mm.jpg' style='width:100vw;height:100vh;' />
+</view>

@@ -1,0 +1,5 @@
+/* pages/lxjl/index.wxss */
+
+view{
+  text-align: center;
+}
