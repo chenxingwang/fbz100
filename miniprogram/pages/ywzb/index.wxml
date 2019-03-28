@@ -9,10 +9,13 @@
   <view id='manbzyw'><text>{{shijiyw}}</text></view>
   <view id='sexbzyw'><text>{{ywjy}}</text></view>
 
-  <view id="remark"><text>腰围超标者的心脑血管疾病危险将有明显增加</text></view>
-  <view id="remark"><text>男性腰围：身高（cm）÷2-11（cm）</text></view>
-  <view id="remark"><text>女性腰围：身高（cm）÷2-14（cm）</text></view>
-  <view id="remark"><text>腰围大小±5%为正常范围</text></view>
+  <view class="tisg" style='text-align: left;color: rgb(171, 173, 171);font-size: 8px;'>
+    <view id="remark"><text>腰围超标者的心脑血管疾病危险将有明显增加</text></view>
+    <view id="remark"><text>男性腰围：身高（cm）÷2-11（cm）</text></view>
+    <view id="remark"><text>女性腰围：身高（cm）÷2-14（cm）</text></view>
+    <view id="remark"><text>腰围大小±5%为正常范围</text></view>
+  </view>
+
   <view class='next_view'>
     <button class='next_btn' bindtap='nextFunction'>下一步</button>
   </view>

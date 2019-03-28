@@ -5,7 +5,7 @@
 <text>腰围</text>
 </view>
 <view class='td l'>
-<input class='input_item' type='digit' bindinput='bindUserYw' placeholder='请输入腰围'></input>
+<input class='input_item' type='digit' bindinput='bindUserYw' placeholder='请输入腰围(cm)'></input>
 </view>
 </view>
 

@@ -1,9 +1,0 @@
-<view class='body_item'>
-
-  <navigator url='../jkaddobj/jkaddobj'>
-    <view class='add_item'>
-      <button class='add_btn'>添加健康100题目</button>
-    </view>
-  </navigator>
-
-</view>

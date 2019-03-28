@@ -28,6 +28,9 @@
 }
 
 .remark {
-  text-align: left;
-  color: rgba(152, 153, 153, 1);
+  text-align: left;color: rgb(171, 173, 171);font-size: 8px;
+}
+
+#tisg {
+  background-color: rgb(114, 106, 106);
 }

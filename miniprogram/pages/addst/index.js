@@ -126,6 +126,14 @@ Page({
       })
       return;
     }
+    if (this.data.usersg < 30) {
+      wx.showToast({
+        title: '身高不小于30',
+        icon: 'loading',
+        duration: 1000
+      })
+      return;
+    }
     let usertiz = this.data.usertiz;//体重
     let usersg = this.data.usersg;//身高
     //身高换算为为米

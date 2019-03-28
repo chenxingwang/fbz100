@@ -1,14 +1,8 @@
 {
   "pages": [
-    "pages/jkindex/jkindex",
+    "pages/index/index",
     "pages/jkhb/jkhb",
     "pages/login/login",
-    "pages/addjkhb/addjkhb",
-    "pages/jkme/jkme",
-    "pages/jkdoler/jkdoler",
-    "pages/jkdoler/addjkdoler",
-    "pages/jkaddobj/jkaddobj",
-    
     "pages/addst/index",
     "pages/tzbz/index",
     "pages/addyw/index",
@@ -31,7 +25,7 @@
     "list": [
       
       {
-        "pagePath": "pages/jkindex/jkindex",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/shouye.png",
         "selectedIconPath": "images/shouye.png"
